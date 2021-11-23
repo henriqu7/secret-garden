@@ -1,0 +1,774 @@
+@motive:          #f77345;
+@motive-darker:   darken(@motive, 5%);
+@motive-lighter:  lighten(@motive, 8%);
+a{
+  &:hover, &:focus, &:active{
+    color: @motive;
+  }
+}
+
+
+// Utilities color Motive // --------------------------------------------------------------------------------------------
+
+.ct-u-colorMotive{
+  color: @motive;
+}
+
+.ct-u-backgroundMotive{
+  background-color: @motive;
+}
+// Heart Beating // ----------------------------------------------------------------------------------------------------
+
+.ct-heart{
+  &.ct-heart--beating{
+    color: @motive;
+  }
+}
+
+// Helper styles // ----------------------------------------------------------------------------------------------------
+
+.ct-link{
+  &.ct-link--inherit{
+    &:hover, &:active, &:focus{
+      color: @motive;
+    }
+  }
+}
+
+// Widgets // ----------------------------------------------------------------------------------------------------------
+
+.ct-widget{
+  .ct-widget-title{
+    &:before{
+      background-color: @motive;
+    }
+  }
+}
+.widget{
+  .widget-inner{
+    .widget-title{
+      &:before{
+        background-color: @motive;
+      }
+    }
+    ul {
+      li {
+        a{
+          &:hover, &:active, &:focus{
+            color: @motive;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Lists // ------------------------------------------------------------------------------------------------------------
+
+.ct-list--type1{
+  > li {
+    > a {
+      &:hover, &:active, &:focus{
+        color: @motive;
+      }
+    }
+  }
+}
+
+.ct-icon--motive{
+  li {
+    i {
+      color: @motive;
+    }
+  }
+}
+
+.ct-list--withArrow{
+  li {
+    span{
+      border: 2px solid @motive;
+      i{
+        color:@motive;
+      }
+    }
+  }
+}
+
+// Divider block // ----------------------------------------------------------------------------------------------------
+
+.ct-dividerBlock{
+  background-color: @motive;
+}
+
+// Section header // ---------------------------------------------------------------------------------------------------
+
+.ct-sectionHeader{
+  &.ct-sectionHeader--type1{
+    .ct-sectionHeader-title{
+      &:before{
+        background-color: @motive;
+      }
+    }
+  }
+}
+
+// Portfolio // --------------------------------------------------------------------------------------------------------
+
+.ct-gallery-filters {
+  li {
+    &.active{
+      background-color: @motive;
+      border-color: @motive;
+    }
+    &:hover, &:active, &:focus {
+      background-color: @motive;
+      border-color: @motive;
+    }
+  }
+}
+
+.ct-gallery {
+  .ct-gallery-item {
+    .ct-galleryBox {
+      figure {
+        figcaption {
+          .ct-galleryBox-price{
+            color: @motive;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Icon box // ---------------------------------------------------------------------------------------------------------
+
+.ct-iconBox{
+  &.ct-iconBox--circle {
+    .ct-iconBox-icon{
+      color: @motive;
+      border-color: @motive;
+      .ct-m-bordered(@top-color: @motive, @right-color: @motive, @bottom-color: @motive, @left-color: @motive);
+    }
+    &:hover {
+      .ct-iconBox-icon{
+        background-color: @motive;
+      }
+    }
+  }
+  &.ct-iconBox--type2{
+    &.ct-iconBox--motive{
+      .ct-iconBox-icon{
+        color: @motive;
+      }
+    }
+  }
+}
+
+// Article box // ------------------------------------------------------------------------------------------------------
+
+.ct-articleBox{
+  a {
+    figure {
+      figcaption {
+        .ct-articleBox-date{
+          color: @motive;
+        }
+      }
+    }
+  }
+  &.ct-articleBox--type2{
+    .ct-articleBox-meta{
+      color: @motive;
+    }
+  }
+}
+
+// Buttons // ----------------------------------------------------------------------------------------------------------
+
+.btn-primary {
+  background-color: @motive;
+  border-color: @motive;
+  &:hover, &:focus, &:active{
+    span{
+      background-color: @motive;
+      border-color: @motive;
+    }
+  }
+}
+.btn-link{
+  &:hover, &:active, &:focus{
+    color: @motive;
+    span{
+      color: @motive;
+    }
+  }
+}
+.btn-default{
+  border-color: @motive;
+  color: @motive;
+  &:hover, &:active, &:focus{
+    background-color: @motive;
+    border-color: @motive;
+  }
+  span{
+    color: @motive;
+    .ct-m-bordered(@top-color: @motive, @right-color: @motive, @bottom-color: @motive, @left-color: @motive);
+  }
+}
+
+
+// Slick // ------------------------------------------------------------------------------------------------------------
+
+.ct-slick{
+  &.ct-slick-dots--type1{
+    .slick-dots {
+      li {
+        button{
+          &:hover{
+            background-color: rgba(red(@motive), green(@motive), blue(@motive), .9);
+          }
+        }
+        &.slick-active{
+          button{
+            background-color: @motive;
+          }
+        }
+      }
+    }
+  }
+  &.ct-slick-dots--type2{
+    .slick-dots{
+      .slick-active{
+        button {
+          background-color: @motive;
+        }
+      }
+    }
+  }
+  &.ct-slick-arrows--type2{
+    .slick-prev,
+    .slick-next{
+      &:hover {
+        &:before{
+          color: @motive;
+        }
+      }
+    }
+  }
+  &.ct-slick-arrows--type3{
+    &.ct-slick-arrows--motive{
+      .slick-prev,
+      .slick-next{
+        &:hover{
+          border-color: @motive;
+          &:before{
+            color: @motive;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Booking box // ------------------------------------------------------------------------------------------------------
+
+.ct-bookingBox-fix{
+  &:before{
+    background-color: @motive;
+  }
+  &:after{
+    border-color: transparent transparent transparent @motive-darker;
+  }
+}
+
+// Image box // --------------------------------------------------------------------------------------------------------
+
+.ct-imageBox{
+  &.ct-imageBox--type1{
+    &:hover{
+      figcaption{
+        background-color: rgba(red(@motive), green(@motive), blue(@motive), .9);
+      }
+    }
+  }
+  &.ct-imageBox--gradient{
+    figcaption{
+      .ct-imageBox-content{
+        .ct-imageBox-title{
+          &:before{
+            background-color: @motive;
+          }
+        }
+      }
+    }
+  }
+  &.ct-imageBox--type4{
+    &:hover{
+      &:after{
+        background-color: rgba(red(@motive), green(@motive), blue(@motive), .7);
+      }
+    }
+  }
+  &.ct-imageBox--rounded{
+    .ct-imageBox-linkHelper {
+      background-color: rgba(red(@motive), green(@motive), blue(@motive), .9);
+    }
+  }
+}
+
+// Accordion // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-accordion {
+  .panel-group{
+    .panel{
+      .panel-heading{
+        .panel-title{
+          a{
+            background-color: @motive;
+            &:before{
+              color: @motive;
+            }
+            &:hover{
+              background-color: @motive;
+            }
+            &.collapsed{
+              &:after{
+                background-color: @motive;
+              }
+              &:hover{
+                background-color: @motive;
+                &:before{
+                  color: @motive;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pricing Box // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-pricingBox{
+  .ct-pricingBox-content{
+    i {
+      color: @motive;
+    }
+  }
+  .ct-pricingBox-footer{
+    background-color: @motive;
+    svg{
+      fill: @motive;
+    }
+  }
+  &.ct-pricingBox--special{
+    .ct-pricingBox-tooltip{
+      background-color: @motive;
+      &:before{
+        border-color: @motive transparent transparent transparent;
+      }
+    }
+  }
+  &.ct-pricingBox--switchColors{
+    .ct-pricingBox-header{
+      background-color: @motive;
+    }
+  }
+}
+
+// Testimonials // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+.ct-testimonials{
+  .ct-testimonials-description{
+    background-color: @motive;
+    &:before{
+      border-color: transparent transparent transparent @motive;
+    }
+    .ct-testimonials-textContent {
+      .ct-testimonials-header{
+        border-bottom: 1px solid @motive-lighter;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+    }
+  }
+
+}
+// Product box // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-productBox{
+  .media-body{
+    .ct-productBox-price{
+      color: @motive;
+    }
+  }
+}
+
+// Gallery container // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-galleryContainer{
+  figcaption{
+    .ct-galleryContainer-inStock {
+      color: @motive;
+    }
+  }
+}
+
+// Magnific popup // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.mfp-arrow {
+  &.mfp-arrow-left,
+  &.mfp-arrow-right {
+    &:before {
+      color: @motive;
+    }
+  }
+}
+
+// Blockquote // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-blockquote{
+  &.ct-blockquote--motive{
+    border-left: 8px solid @motive;
+  }
+}
+
+// Pagination // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.pagination{
+  &.pagination--small{
+    li {
+      a {
+        &:hover {
+          color: @motive;
+        }
+      }
+    }
+    > .active {
+      > a {
+        color: @motive;
+      }
+    }
+  }
+}
+
+// Checkbox // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.checkbox,
+.radio{
+  input[type=checkbox]:checked + label:before,
+  input[type=checkbox]:checked + label{
+    border-color: @motive;
+    color: @motive;
+  }
+  input[type=radio]:checked + label:before,
+  input[type=radio]:checked + label{
+    border-color: @motive;
+    color: @motive;
+  }
+  input[type=checkbox],
+  input[type=radio]{
+    + label{
+      &:hover{
+        color: @motive;
+      }
+    }
+  }
+}
+
+// Date picker // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.datepicker {
+  table{
+    tr{
+      td.today{
+        background-color: @motive;
+        border-color: @motive;
+        &:hover:hover, &:active, &:focus{
+          background-color: @motive;
+          border-color: @motive;
+        }
+      }
+      td.active.active{
+        background-color: @motive-lighter;
+        border-color: @motive-lighter;
+        &:hover:hover, &:active, &:focus{
+          background-color: @motive-lighter;
+          border-color: @motive-lighter;
+        }
+      }
+    }
+  }
+}
+
+// Menu mobile // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-menuMobile{
+  .ct-menuMobile-navbar{
+    li {
+      &.open{
+        > a{
+          color: @motive;
+        }
+      }
+      a{
+        &:hover{
+          color: @motive;
+        }
+      }
+    }
+  }
+}
+
+// Menu Desktop // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.navbar{
+  .navbar-nav {
+    > li {
+      &:not(.active){
+        > a {
+          &:hover{
+            color: @motive;
+          }
+        }
+      }
+      &.active {
+        > a {
+          .active-link {
+            border-color: @motive;
+            i {
+              color: @motive;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+nav.navbar{
+  ul.nav.navbar-nav{
+    > li.active.dropdown{
+      > .dropdown-menu{
+        > li.active{
+          > a{
+            color: @motive;
+          }
+          > ul.dropdown-menu{
+            > li.active{
+              a{
+                color: @motive;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav > li.dropdown .dropdown-menu,
+nav.navbar.navbar-fixed ul.nav.navbar-nav > li.dropdown .dropdown-menu{
+  border-top: 2px solid @motive;
+  li {
+    a{
+      &:hover{
+        color: @motive;
+      }
+    }
+  }
+}
+
+// Progress bars // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-progressBar {
+  .progress{
+    .progress-bar{
+      background-color: @motive;
+    }
+  }
+  &.ct-progressBar--type3{
+    .progress{
+      .progress-bar{
+        .ct-progressBar-content{
+          background-color: @motive;
+        }
+      }
+    }
+  }
+}
+
+// Tabs // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-tabs{
+  &.ct-tabs--type1 {
+    .nav-tabs {
+      li {
+        a {
+          &:hover{
+            background-color: @motive;
+          }
+        }
+        &.active{
+          a{
+            background-color: @motive;
+          }
+        }
+      }
+    }
+  }
+  &.ct-tabs--type2{
+    .nav-tabs{
+      li {
+        &.active{
+          a{
+            background-color: @motive;
+          }
+        }
+        a {
+          &:hover{
+            color: @motive;
+            .nav-tabs-title{
+              color: @motive;
+            }
+          }
+        }
+        &:before{
+          background-color: @motive;
+        }
+      }
+    }
+  }
+}
+
+// Counters // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-counterBox-icon {
+  .ct-counter-icon {
+    background-color: @motive;
+  }
+  .ct-counter-content{
+    .ct-counter-description{
+      color: @motive;
+    }
+  }
+}
+.ct-counterBox{
+  .ct-counter-content{
+    .ct-counter-description{
+      color: @motive;
+    }
+  }
+}
+
+// Tables // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.table{
+  thead{
+    tr{
+      background-color: @motive;
+    }
+  }
+}
+
+// Forms // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+fieldset[disabled]{
+  .btn-primary{
+    border-color: @motive;
+    background-color: @motive;
+  }
+}
+.form-control{
+  &:focus{
+    border-color: @motive;
+  }
+}
+.contactForm{
+  .selectize-dropdown.single{
+    .selectize-dropdown-content{
+      div{
+        &:hover{
+          background-color: rgba(red(@motive), green(@motive), blue(@motive), .1);
+        }
+        &.active{
+          &:hover{
+            background-color: rgba(red(@motive), green(@motive), blue(@motive), .1);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Selection // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+::-moz-selection {
+  background: @motive;
+}
+::selection {
+  background: @motive;
+}
+
+// Socials // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-socials{
+  &.ct-socials--type2{
+    li {
+      a {
+        &:hover{
+          background-color: @motive;
+        }
+      }
+    }
+  }
+}
+
+// Person box // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-personBox{
+  &.ct-personBox--type1,
+  &.ct-personBox--type2{
+    .ct-personBox-job{
+      color: @motive;
+    }
+  }
+  &.ct-personBox--type2{
+    text-align: center;
+    .ct-personBox-header{
+      &:after{
+        border-top: 10px solid @motive;
+      }
+    }
+  }
+}
+
+// Blog // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-articleBox.ct-articleBox--type3{
+  .media-body{
+    .ct-articleBox-meta{
+      color: @motive;
+    }
+  }
+}
+
+// Map popover // ------------------------------------------------------------------------------------------------------
+
+.ct-map-popover{
+  .ct-map-popover_cords-item{
+    .ct-m-rounded(@radius: 50%);
+    &:before{
+      background-color: @motive;
+    }
+  }
+}
+.popover{
+  .popover-title{
+    background-color: @motive;
+  }
+}
